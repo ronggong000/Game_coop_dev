@@ -13,6 +13,22 @@
 
 ## 2026-06-28
 
+### 16:53 - 提交 Godot AI 项目配置
+
+更新者：KowComical（Codex 代操作）
+
+更新内容：
+- 将 Godot 自动写入的 `_mcp_game_helper` autoload 保留到 `project.godot`，用于项目级 Godot AI 运行辅助。
+- 规范化 `project.godot` 的配置文件注释和末尾换行。
+- 本次变更属于仓库内 Godot 项目配置，不包含用户级 Codex/MCP 配置、个人 token 或本机绝对路径。
+
+验证：
+- 使用 Godot 4.7 stable 控制台版执行 `--headless --path . --scene res://scenes/main.tscn --quit-after 2`，主场景短时运行通过。
+
+影响路径：
+- `project.godot`
+- `UPDATE_LOG.md`
+
 ### 16:49 - 修正更新日志记录格式
 
 更新者：KowComical（Codex 代操作）
