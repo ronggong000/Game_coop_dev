@@ -10,6 +10,7 @@
 
 - `main` 是受保护分支，不能直接 push；所有改动必须先推到功能分支，再通过 Pull Request 合并。
 - PR 至少需要另一位维护者 approval 后才能合并；PR 作者不能把自己的改动当作已审查。
+- `KowComical` 发起的 PR 标题默认使用 `Kow:` 前缀，方便区分提交来源。
 - 开始改动前先运行 `git status`，确认当前分支和未提交改动；不要覆盖他人的本地改动。
 - 新工作从最新 `main` 创建分支，例如 `feature/player-controller`、`fix/input-mapping`、`docs/update-workflow`。
 - 拉取远端更新时，优先使用 `git fetch` 查看差异，再按当前分支策略执行 `git pull --rebase` 或普通 merge。
