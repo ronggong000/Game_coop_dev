@@ -66,3 +66,22 @@
 - `.gitignore`
 - `UPDATE_LOG.md`
 - `local_assets/`
+
+### 16:03 - 新增横板小队跑酷 demo
+
+更新者：维护者（Codex 代操作）
+
+更新内容：
+- 从 `local_assets/Tiny Swords.zip` 中抽取少量 PNG 到项目内 `assets/tiny_swords/`，用于 demo 角色、敌人和场景装饰。
+- 新增 `scripts/main.gd`，实现横板自动前进、上下换道、小队人数显示、加减/倍增门、队友拾取、敌人扣人数和终点结算。
+- 将 `scenes/main.tscn` 改为 `Node2D` 主场景并绑定 demo 脚本。
+
+验证：
+- 使用 Godot 4.7 stable 控制台版执行 `--headless --path . --quit`，项目加载和脚本解析通过。
+- 使用 Godot 4.7 stable 控制台版执行 `--headless --path . --scene res://scenes/main.tscn --quit-after 2`，主场景短时运行通过。
+
+影响路径：
+- `assets/tiny_swords/`
+- `scripts/main.gd`
+- `scenes/main.tscn`
+- `UPDATE_LOG.md`
