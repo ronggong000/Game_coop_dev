@@ -30,3 +30,21 @@
 影响路径：
 - `UPDATE_LOG.md`
 - `AGENTS.md`
+
+### 14:17 - 优化项目协作和 Godot 状态说明
+
+更新者：KowComical（Codex 代操作）
+
+更新内容：
+- 重写 `AGENTS.md` 的项目定位、Git 协作规则、更新日志规则、Godot 约定和 Codex / MCP / Godot AI 约定。
+- 将目标 Godot 版本从“待确认”更新为 `4.7 stable`。
+- 补充 `Kow:` PR 标题前缀、Godot 标准版/GDScript 默认选择、`.godot/` 缓存不提交、Godot AI 与用户级 MCP 配置边界等说明。
+- 强调修改代码、文档、自动化或配置时必须同步维护 `UPDATE_LOG.md`。
+
+验证：
+- 检查 `AGENTS.md` 不再包含 Godot 版本未确认的旧规则。
+- 检查 `AGENTS.md` 已包含 Godot `4.7 stable`、PR 前缀、更新日志和 MCP 配置边界说明。
+
+影响路径：
+- `AGENTS.md`
+- `UPDATE_LOG.md`
