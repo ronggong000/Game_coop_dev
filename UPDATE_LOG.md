@@ -48,3 +48,21 @@
 影响路径：
 - `AGENTS.md`
 - `UPDATE_LOG.md`
+
+### 15:48 - 新增本地素材忽略目录
+
+更新者：KowComical（Codex 代操作）
+
+更新内容：
+- 新增本地素材目录 `local_assets/`，用于存放不需要同步到 GitHub 的本地素材、参考图或源文件。
+- 在 `.gitignore` 中加入 `local_assets/`，确保该目录及其内容不会被 Git 跟踪。
+- 在 `local_assets/README_LOCAL.txt` 中写入本地用途说明；该说明文件同样被忽略，不会提交到仓库。
+
+验证：
+- 使用 `git check-ignore` 验证 `local_assets/README_LOCAL.txt` 命中 `.gitignore` 规则。
+- 使用 `git status` 确认 `local_assets/` 不出现在待提交列表中。
+
+影响路径：
+- `.gitignore`
+- `UPDATE_LOG.md`
+- `local_assets/`

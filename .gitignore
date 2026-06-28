@@ -1,2 +1,4 @@
 # Godot generated editor/import cache.
 .godot/
+# Local-only source/reference assets. Do not sync to GitHub.
+local_assets/
